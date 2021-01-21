@@ -17,7 +17,7 @@ class PostList extends React.PureComponent {
 
   renderItemIOS = ({
     item: {
-      node: { id, title }
+      node: { id, title, values }
     }
   }) => {
     const { deletePost, navigation, t } = this.props;

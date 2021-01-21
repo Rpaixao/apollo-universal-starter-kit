@@ -1,20 +1,6 @@
 {
-  "navLink": "Pagination",
-  "list": {
-    "title": {
-      "standard": "Standard pagination",
-      "relay": "Relay pagination",
-      "scroll": "Scroll-based pagination"
-    },
-    "btn": {
-      "more": "Load more..."
-    },
-    "column": {
-      "title": "Name"
-    },
-    "select": {
-      "ok": "Select",
-      "dismiss": "Cancel"
-    }
-  }
+  "navLink": "Pagination nav link",
+  "title": "Pagination module",
+  "meta": "Pagination example",
+  "welcomeText": "Hello, This is the Pagination module"
 }

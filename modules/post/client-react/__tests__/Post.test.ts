@@ -8,8 +8,8 @@ import COMMENT_SUBSCRIPTION from '../graphql/CommentSubscription.graphql';
 
 const createNode = (id: number) => ({
   id,
-  title: `Post title ${id}`,
-  content: `Post content ${id}`,
+  title: `Package ${id}`,
+  content: `Package content ${id}`,
   comments: [
     { id: id * 1000 + 1, content: 'Post comment 1', __typename: 'Comment' },
     { id: id * 1000 + 2, content: 'Post comment 2', __typename: 'Comment' }

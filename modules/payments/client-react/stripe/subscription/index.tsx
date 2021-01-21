@@ -51,13 +51,7 @@ export default settings.stripe.subscription.enabled && settings.stripe.subscript
           )}
         />
       ],
-      navItem: [
-        <IfLoggedIn role="user">
-          <MenuItem key="/subscriber-page">
-            <NavLinkWithI18n />
-          </MenuItem>
-        </IfLoggedIn>
-      ],
+      navItem: [],
       localization: [{ ns: 'stripeSubscription', resources }]
     })
   : undefined;

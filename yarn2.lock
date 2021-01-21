@@ -4908,20 +4908,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gqlapp/chat-client-react@^0.1.0, @gqlapp/chat-client-react@workspace:modules/chat/client-react":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/chat-client-react@workspace:modules/chat/client-react"
-  dependencies:
-    "@gqlapp/core-client-react": ^0.1.0
-  languageName: unknown
-  linkType: soft
-
-"@gqlapp/chat-server-ts@workspace:modules/chat/server-ts":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/chat-server-ts@workspace:modules/chat/server-ts"
-  languageName: unknown
-  linkType: soft
-
 "@gqlapp/config@workspace:config":
   version: 0.0.0-use.local
   resolution: "@gqlapp/config@workspace:config"
@@ -4930,21 +4916,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gqlapp/contact-client-react@^0.1.0, @gqlapp/contact-client-react@workspace:modules/contact/client-react":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/contact-client-react@workspace:modules/contact/client-react"
-  languageName: unknown
-  linkType: soft
-
 "@gqlapp/contact-common@workspace:modules/contact/common":
   version: 0.0.0-use.local
   resolution: "@gqlapp/contact-common@workspace:modules/contact/common"
-  languageName: unknown
-  linkType: soft
-
-"@gqlapp/contact-server-ts@workspace:modules/contact/server-ts":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/contact-server-ts@workspace:modules/contact/server-ts"
   languageName: unknown
   linkType: soft
 
@@ -5018,14 +4992,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gqlapp/counter-client-react@^0.1.0, @gqlapp/counter-client-react@workspace:modules/counter/client-react":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/counter-client-react@workspace:modules/counter/client-react"
-  dependencies:
-    "@gqlapp/counter-common": ^0.1.0
-  languageName: unknown
-  linkType: soft
-
 "@gqlapp/counter-client-vue@^0.1.0, @gqlapp/counter-client-vue@workspace:modules/counter/client-vue":
   version: 0.0.0-use.local
   resolution: "@gqlapp/counter-client-vue@workspace:modules/counter/client-vue"
@@ -5038,12 +5004,6 @@ __metadata:
 "@gqlapp/counter-common@^0.1.0, @gqlapp/counter-common@workspace:modules/counter/common":
   version: 0.0.0-use.local
   resolution: "@gqlapp/counter-common@workspace:modules/counter/common"
-  languageName: unknown
-  linkType: soft
-
-"@gqlapp/counter-server-ts@workspace:modules/counter/server-ts":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/counter-server-ts@workspace:modules/counter/server-ts"
   languageName: unknown
   linkType: soft
 
@@ -5183,9 +5143,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gqlapp/pagination-client-react@workspace:modules/pagination/client-react":
+"@gqlapp/pagination-client-react@^1.0.0, @gqlapp/pagination-client-react@workspace:modules/pagination/client-react":
   version: 0.0.0-use.local
   resolution: "@gqlapp/pagination-client-react@workspace:modules/pagination/client-react"
+  languageName: unknown
+  linkType: soft
+
+"@gqlapp/pagination-server-ts@^1.0.0, @gqlapp/pagination-server-ts@workspace:modules/pagination/server-ts":
+  version: 0.0.0-use.local
+  resolution: "@gqlapp/pagination-server-ts@workspace:modules/pagination/server-ts"
   languageName: unknown
   linkType: soft
 
@@ -5210,18 +5176,6 @@ __metadata:
 "@gqlapp/post-server-ts@workspace:modules/post/server-ts":
   version: 0.0.0-use.local
   resolution: "@gqlapp/post-server-ts@workspace:modules/post/server-ts"
-  languageName: unknown
-  linkType: soft
-
-"@gqlapp/reports-client-react@^0.1.0, @gqlapp/reports-client-react@workspace:modules/reports/client-react":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/reports-client-react@workspace:modules/reports/client-react"
-  languageName: unknown
-  linkType: soft
-
-"@gqlapp/reports-server-ts@workspace:modules/reports/server-ts":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/reports-server-ts@workspace:modules/reports/server-ts"
   languageName: unknown
   linkType: soft
 
@@ -5256,18 +5210,6 @@ __metadata:
 "@gqlapp/testing-server-ts@^0.1.0, @gqlapp/testing-server-ts@workspace:modules/testing/server-ts":
   version: 0.0.0-use.local
   resolution: "@gqlapp/testing-server-ts@workspace:modules/testing/server-ts"
-  languageName: unknown
-  linkType: soft
-
-"@gqlapp/upload-client-react@workspace:modules/upload/client-react":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/upload-client-react@workspace:modules/upload/client-react"
-  languageName: unknown
-  linkType: soft
-
-"@gqlapp/upload-server-ts@workspace:modules/upload/server-ts":
-  version: 0.0.0-use.local
-  resolution: "@gqlapp/upload-server-ts@workspace:modules/upload/server-ts"
   languageName: unknown
   linkType: soft
 
@@ -14963,16 +14905,13 @@ __metadata:
     "@fortawesome/fontawesome-svg-core": ^1.2.17
     "@fortawesome/free-brands-svg-icons": ^5.8.1
     "@fortawesome/react-fontawesome": ^0.1.4
-    "@gqlapp/chat-client-react": ^0.1.0
-    "@gqlapp/contact-client-react": ^0.1.0
     "@gqlapp/core-client-react": ^0.1.0
-    "@gqlapp/counter-client-react": ^0.1.0
     "@gqlapp/forms-client-react": ^0.1.0
     "@gqlapp/i18n-client-react": ^0.1.0
     "@gqlapp/i18n-common-react": ^0.1.0
     "@gqlapp/module-client-react": ^0.1.0
+    "@gqlapp/pagination-client-react": ^1.0.0
     "@gqlapp/payments-client-react": ^0.1.0
-    "@gqlapp/reports-client-react": ^0.1.0
     "@gqlapp/validation-common-react": ^0.1.0
     "@loadable/component": ^5.10.1
     "@storybook/addon-actions": ^5.3.14
@@ -36989,6 +36928,7 @@ resolve@^1.17.0:
     "@babel/register": ^7.0.0
     "@gqlapp/core-common": ^0.1.0
     "@gqlapp/database-server-ts": ^0.1.0
+    "@gqlapp/pagination-server-ts": ^1.0.0
     "@gqlapp/testing-server-ts": ^0.1.0
     "@hofstadter-io/sofa-api": ^0.3.1
     "@loadable/component": ^5.10.1

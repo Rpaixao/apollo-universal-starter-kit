@@ -193,52 +193,6 @@ export default new ClientModule({
           drawerLabel: <HeaderTitleWithI18n i18nKey="navLink.signIn" />
         }
       },
-      Users: {
-        screen: createStackNavigator({
-          Users: {
-            screen: UsersListScreen,
-            navigationOptions: ({ navigation }) => ({
-              headerTitle: <HeaderTitleWithI18n i18nKey="navLink.users" style="subTitle" />,
-              headerLeft: (
-                <IconButton iconName="menu" iconSize={32} iconColor="#0275d8" onPress={() => navigation.openDrawer()} />
-              ),
-              headerRight: (
-                <IconButton
-                  iconName="filter"
-                  iconSize={32}
-                  iconColor="#0275d8"
-                  onPress={() => {
-                    const isOpenFilter = navigation.getParam('isOpenFilter');
-                    navigation.setParams({ isOpenFilter: !isOpenFilter });
-                  }}
-                />
-              ),
-              headerForceInset: {}
-            })
-          },
-          UserEdit: {
-            screen: UserEditScreen,
-            navigationOptions: () => ({
-              headerTitle: <HeaderTitleWithI18n i18nKey="navLink.editUser" style="subTitle" />,
-              headerForceInset: {}
-            })
-          },
-          UserAdd: {
-            screen: UserAddScreen,
-            navigationOptions: () => ({
-              headerTitle: <HeaderTitleWithI18n i18nKey="navLink.editUser" style="subTitle" />,
-              headerForceInset: {}
-            })
-          }
-        }),
-        userInfo: {
-          showOnLogin: true,
-          role: 'admin'
-        },
-        navigationOptions: {
-          drawerLabel: <HeaderTitleWithI18n i18nKey="navLink.users" />
-        }
-      },
       Logout: {
         screen: () => null,
         userInfo: {

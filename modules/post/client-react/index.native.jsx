@@ -18,24 +18,9 @@ const withI18N = (Component, props) => {
   return <WithI18N {...props} />;
 };
 
-const PostListHeaderRight = ({ navigation, t }) => {
-  return (
-    <View style={styles.addButtonContainer}>
-      <Button style={styles.addButton} size={'small'} type={primary} onPress={() => navigation.navigate('PostAdd')}>
-        {t('list.btn.add')}
-      </Button>
-    </View>
-  );
-};
-PostListHeaderRight.propTypes = {
-  navigation: PropTypes.object,
-  t: PropTypes.func
-};
-
 class PostListScreen extends React.Component {
   static navigationOptions = ({ navigation }) => ({
     headerTitle: withI18N(HeaderTitle, { style: 'subTitle', i18nKey: 'list.subTitle' }),
-    headerRight: withI18N(PostListHeaderRight, { navigation }),
     headerLeft: (
       <IconButton iconName="menu" iconSize={32} iconColor="#0275d8" onPress={() => navigation.openDrawer()} />
     ),
@@ -136,6 +121,9 @@ export default new ClientModule({
   drawerItem: [
     {
       Post: {
+        userInfo: {
+          showOnLogin: true
+        },
         screen: PostNavigator,
         navigationOptions: {
           drawerLabel: withI18N(HeaderTitle, { i18nKey: 'list.title' })

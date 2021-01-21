@@ -4,7 +4,7 @@ import { Text, StyleSheet, Platform } from 'react-native';
 
 const HeaderTitle = ({ t, i18nKey, style, children, ...props }) => (
   <Text {...props} style={typeof style === 'string' ? styles[style] : style || styles.menuTitle}>
-    {t ? t(i18nKey || 'navLink') : children}
+    {t ? t(i18nKey) : children}
   </Text>
 );
 

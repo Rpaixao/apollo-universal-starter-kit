@@ -1,7 +1,7 @@
 export default {
   enabled: true,
   langPickerRender: true,
-  langList: ['en-US', 'ru-RU'],
+  langList: ['en-US', 'fr-FR', 'ru-RU'],
   fallbackLng: 'en-US',
   cookie: 'lang'
 };
